@@ -30,14 +30,31 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelBookTitle: UILabel!
     
-
+    @IBOutlet weak var labelAuthor: UILabel!
+    
+    @IBOutlet weak var labelStatus: UILabel!
+    
+    @IBOutlet weak var labelPage: UILabel!
+  
+    @IBAction func buttonTurnPage(_ sender: Any) {
+        zombieHaiku.changeCurrentPage()
+        labelPage.text = String("Current page: \(zombieHaiku.currentPage)/\(zombieHaiku.totalPages)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         labelBookTitle.text = zombieHaiku.title
+        labelAuthor.text = zombieHaiku.author
+        
+        if (zombieHaiku.status == 0) {
+            labelStatus.text = "Not Complete"
+        } else {
+            labelStatus.text = "Complete"
+        }
+        
+        labelPage.text = String("Current page: \(zombieHaiku.currentPage)/\(zombieHaiku.totalPages)")
+        
     }
-
-
 }
-
