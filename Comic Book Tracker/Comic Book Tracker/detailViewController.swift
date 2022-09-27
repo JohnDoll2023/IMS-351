@@ -10,9 +10,16 @@ import UIKit
 class detailViewController: UIViewController {
 
     var userSelection = 0
-    
     @IBOutlet weak var detailLabel: UILabel!
     
+    @IBAction func segmentAction(_ sender: Any) {
+        comicbooks[userSelection].status = segmentedOutlet.selectedSegmentIndex
+        let encoder = JSONEncoder()
+        if let data = try? encoder.encode(comicbooks) {
+            UserDefaults.standard.set(data, forKey: "savedComicBooks")
+        }
+    }
+    @IBOutlet weak var segmentedOutlet: UISegmentedControl!
     @IBOutlet weak var comicBookImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,7 @@ class detailViewController: UIViewController {
         // Do any additional setup after loading the view.
         detailLabel.text = comicbooks[userSelection].title
         comicBookImage.image = UIImage(named: comicbooks[userSelection].coverImage)
+        segmentedOutlet.selectedSegmentIndex = comicbooks[userSelection].status
     }
     
 
