@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E412029328F8FE7500C21DD2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E412029228F8FE7500C21DD2 /* VideoViewController.swift */; };
 		E4A7CBCF28DD4C34007E00C4 /* DTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7CBCE28DD4C34007E00C4 /* DTCollectionViewCell.swift */; };
 		E4D8022328DAA87D0028D333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8022228DAA87D0028D333 /* AppDelegate.swift */; };
 		E4D8022528DAA87D0028D333 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8022428DAA87D0028D333 /* SceneDelegate.swift */; };
@@ -14,9 +15,12 @@
 		E4D8022A28DAA87D0028D333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D8022828DAA87D0028D333 /* Main.storyboard */; };
 		E4D8022C28DAA87E0028D333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D8022B28DAA87E0028D333 /* Assets.xcassets */; };
 		E4D8022F28DAA87E0028D333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D8022D28DAA87E0028D333 /* LaunchScreen.storyboard */; };
+		E4FACE8428F8D0C2006F4E87 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FACE8328F8D0C2006F4E87 /* FavoritesViewController.swift */; };
+		E4FACE8628F8D4F1006F4E87 /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FACE8528F8D4F1006F4E87 /* FavoritesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E412029228F8FE7500C21DD2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		E4A7CBCE28DD4C34007E00C4 /* DTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4D8021F28DAA87D0028D333 /* DailyTennisProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyTennisProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D8022228DAA87D0028D333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		E4D8022B28DAA87E0028D333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D8022E28DAA87E0028D333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D8023028DAA87E0028D333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FACE8328F8D0C2006F4E87 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		E4FACE8528F8D4F1006F4E87 /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				E4D8022D28DAA87E0028D333 /* LaunchScreen.storyboard */,
 				E4D8023028DAA87E0028D333 /* Info.plist */,
 				E4A7CBCE28DD4C34007E00C4 /* DTCollectionViewCell.swift */,
+				E4FACE8328F8D0C2006F4E87 /* FavoritesViewController.swift */,
+				E4FACE8528F8D4F1006F4E87 /* FavoritesCollectionViewCell.swift */,
+				E412029228F8FE7500C21DD2 /* VideoViewController.swift */,
 			);
 			path = DailyTennisProject;
 			sourceTree = "<group>";
@@ -142,8 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A7CBCF28DD4C34007E00C4 /* DTCollectionViewCell.swift in Sources */,
+				E412029328F8FE7500C21DD2 /* VideoViewController.swift in Sources */,
 				E4D8022728DAA87D0028D333 /* ViewController.swift in Sources */,
+				E4FACE8628F8D4F1006F4E87 /* FavoritesCollectionViewCell.swift in Sources */,
 				E4D8022328DAA87D0028D333 /* AppDelegate.swift in Sources */,
+				E4FACE8428F8D0C2006F4E87 /* FavoritesViewController.swift in Sources */,
 				E4D8022528DAA87D0028D333 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
